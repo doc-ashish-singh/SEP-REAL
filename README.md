@@ -10,4 +10,4 @@ Some ETLs and preprocessing as of now. To check out SOFA score implementation (w
     -   bilirubin
     -   platelets
 * Change the `data_folder` variable to point it to the location where the files were downloaded
-* Run the file with `python get_sofa_score.py <N>` where N is the number of patients that you want the SOFA scores (and the time of onset of sepsis) for
+* Run the file with `python sofa_score.py <N>` where N is the number of patients that you want the SOFA scores (and the time of onset of sepsis) for
