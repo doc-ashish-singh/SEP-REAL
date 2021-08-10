@@ -2,7 +2,6 @@ import pandas as pd
 from datetime import datetime, timedelta
 import random
 import json
-import numpy as np
 from pathlib import Path
 import sys
 
@@ -29,10 +28,10 @@ def get_sofa_score(n):
     platelets['CHARTTIME'] = pd.to_datetime(platelets['CHARTTIME'])
     creatinine = pd.read_csv(data_folder + 'creatinine.csv')
     creatinine['CHARTTIME'] = pd.to_datetime(creatinine['CHARTTIME'])
-    mean_arterial_pressure = pd.read_csv(data_folder + 'MAP.csv')
-    mean_arterial_pressure['CHARTTIME'] = pd.to_datetime(mean_arterial_pressure['CHARTTIME'])
-    dopamine = pd.read_csv(data_folder + 'dopamine.csv')
-    dopamine['STARTTIME'] = pd.to_datetime(dopamine['STARTTIME'])
+    # mean_arterial_pressure = pd.read_csv(data_folder + 'MAP.csv')
+    # mean_arterial_pressure['CHARTTIME'] = pd.to_datetime(mean_arterial_pressure['CHARTTIME'])
+    # dopamine = pd.read_csv(data_folder + 'dopamine.csv')
+    # dopamine['STARTTIME'] = pd.to_datetime(dopamine['STARTTIME'])
 
     window_of_interest = pd.read_csv(data_folder + 'window_of_interest')
 
